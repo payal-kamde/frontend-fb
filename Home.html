@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>Facebook</title>
+        <script src="validations.js"></script>
         <link href="style.css" type="text/css" rel="stylesheet"/>
         <link rel="icon" type="image/x-icon" href="https://icons.iconarchive.com/icons/yootheme/social-bookmark/512/social-facebook-box-blue-icon.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -9,7 +10,7 @@
         <header>
             <div class="header">
                 <li class="sitename"><a href="http://Facebook.com">Facebook</a></li>
-                <form action="post">
+                <form name="f1" onsubmit="validatefunction()" action="post">
                     <li>Email or Phone<br><input type="text" name="email" class="e"></li>
                     <li>Password<br><input type="password" name="password" class="p"><br><a href="">Forgotten account?</a></li>
                     <li><input type="submit" name="login" value="Log In" class="b"></li>
@@ -27,13 +28,15 @@
            <div class="div2">
                 <h1>Sign Up</h1>
                 <p>It's free and always will be.</p>
-                <li><input type="text" placeholder="First Name" class="firstname"><input type="text" placeholder="Surname" class="surname"></li>
-                <li><input type="text" placeholder="Mobile number or email address"class="email"></li>
-                <li><input type="text" placeholder="Re-enter mobile number or email address" class="email1"></li>
-                <li><input type="password" placeholder="New password" class="pass"></li>
+                <form name ="form1" onsubmit="validatefunc()"  action="post">
+                <li><input type="text" placeholder="Username" name="Username" required class="username"></li>
+                <li><input type="email" placeholder="Email" name="Email" class="email"></li>
+                <li><input type="password" placeholder="Password"name="Password" class="pass"></li>
+                <li><input type="password" placeholder="Confirm password" name="Password" class="pass"></li>
                 <li><input type="radio">Female <input type="radio">Male</li>
                 <li class="terms">By clicking Sign Up,, you agree to our  <a href="">Teams. Data Police</a> and  <br><a href="">Cookies Policy </a>you may receive SMS Notification from us and <br>can opt out any time.</li>
                 <li><input type="submit" value="Sign Up" class="sub"></li>
+                </form>
             </div>
         </div>
         <footer>
