@@ -33,8 +33,5 @@ function validatefunction(){
         alert("@ need to be included at correct position")
         return false;
      }
-    if(e1.indexOf(".")<=0){
-        alert(". need to be included at correct position")
-        return false;
-     }
+   
 }
