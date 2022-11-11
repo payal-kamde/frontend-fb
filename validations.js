@@ -13,8 +13,7 @@ function validationfunc(){
     }
      
     if(password.length<=7){
-        document.getElementsByClassName("username").innerHTML("**Password cannot be less than 8 characters")
-        return false;
+        document.getElementById("ps").innerHTML("Password Must Be Of 8 cahracters")
     }
 }    
 function validatefunction(){
