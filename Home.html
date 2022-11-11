@@ -7,11 +7,12 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     </head>
+    
 
     <body>
         <header>
             <div class="header">
-                <li class="sitename"><a href="http://Facebook.com">Facebook</a></li>
+                <li class="sitename"><a href="">Facebook</a></li>
                 <form action="post">
                     <li>Email<br><input type="text" name="email" class="e"></li>
                     <li>Password<br><input type="password" name="password" class="p"><br><a href="">Forgotten account?</a></li>
@@ -32,18 +33,27 @@
                 <h1>Sign Up</h1>
                 <p>It's free and always will be.</p>
                 <li><input type="text" placeholder="First Name" class="firstname"><input type="text" placeholder="Last Name" class="lastname"></li>
+                <div id="first-name-err"></div>
+                <li><input type="text" placeholder="Email address"class="email"></li>
                 <li><input type="text" placeholder="Email address"class="email"></li>
                 
                 <li><input type="password" placeholder="Password" class="pass"></li>
                 <li><input type="password" placeholder="Conform password" class="pass"></li>
                 <li><input type="radio">Female <input type="radio">Male</li>
                 <li class="terms">By clicking Sign Up,, you agree to our  <a href="">Teams. Data Police</a> and  <br><a href="">Cookies Policy </a>you may receive SMS Notification from us and <br>can opt out any time.</li>
-                <li><input type="submit"  value="Sign Up" class="sub"></li>
+                <li><input type="button"  value="Sign Up" class="sub" onclick="myFunction()"></li>
+                </form>
             </div>
-        </form>
+            
+        
         </div>
         <footer>
-            <p><a href="facebook.com">facebook.com</a></p>
+            <p><a href="">facebook.com</a></p>
         </footer>
+        <script src="script.js"></script>
+        
+    
     </body>
+
+
 </html>
