@@ -1,3 +1,14 @@
+function f1(){
+    var emailVal=document.form1.Email.value;
+    if(emailVal.indexOf('.')<=0){
+        document.getElementById("em").innerHTML="INVALID . POSITION";
+        return false;
+    }
+    if((emailVal.charAt(emailVal.length-4)!='.') && (emailVal.length-3)!='.'){
+        document.getElementById("em").innerHTML="INVALID";
+        return false;
+    }
+}
 function validationfunc(){
     var a= document.form1.Email.value;
     if(a.indexOf('@')<=0){
@@ -15,6 +26,7 @@ function validationfunc(){
     if(password.length<=7){
         document.getElementById("ps").innerHTML("Password Must Be Of 8 cahracters")
     }
+    console.log("dfhj")
 }    
 function validatefunction(){
     
