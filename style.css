@@ -128,6 +128,22 @@ header
     list-style-type:none;
     margin-top:10px;
 }
+#usernamediv{
+    color:red;
+    font-size: small;
+}
+#emaildiv{
+    color:red;
+    font-size: small;
+}
+#passworddiv{
+    color:red;
+    font-size: small;
+}
+#confirmpassworddiv{
+    color:red;
+    font-size: small;
+}
 #username
 {
     width:100%;
