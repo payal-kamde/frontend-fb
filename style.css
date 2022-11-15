@@ -53,7 +53,7 @@ header
     color:#A9BCF5;
     text-decoration:none;
 }
-.email1
+.e
 {
     margin-top:3px;
     margin-bottom:3px;
@@ -62,7 +62,7 @@ header
     height:25px;
     padding-left:3px;
 }
-.password1
+.p
 {
     margin-top:3px;
     margin-bottom:3px;
@@ -71,7 +71,7 @@ header
     height:25px;
     padding-left:30px;
 }
-.button
+.b
 {
     height:25px;
     margin-top:20px;

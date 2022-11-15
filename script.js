@@ -1,5 +1,11 @@
 function myFunction() {
-	validation();
+	var validated = validation();
+	
+	if(validated == true)
+	{
+		document.write("login success");
+	}
+	
 }
 
 			function validation() {
@@ -13,10 +19,10 @@ function myFunction() {
 					document.forms.RegForm.Password.value;
 				var CPassword =
 					document.forms.RegForm.CPassword.value;
-				var female =
-					document.forms.RegForm.female.value;
-				var male =
-					document.forms.RegForm.male.value;
+				//var female =
+					//document.forms.RegForm.female.value;
+				//var male =
+				//	document.forms.RegForm.male.value;
 				var regEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g; //Javascript reGex for Email Validation.
 				var regName = /\d+$/g;								 // Javascript reGex for Name validation
 
@@ -53,10 +59,10 @@ function myFunction() {
 					return false;
 				}
 
-				if(password.length <8){
+				if(password.length <6){
 					PasswordErr=document.getElementById('Password-err');
 					PasswordErr.style.color = 'red';
-					PasswordErr.innerHTML="Password should be atleast 8 character long";
+					PasswordErr.innerHTML="Password should be atleast 6 character long";
 					password.focus();
 					return false;
 				}
@@ -69,10 +75,10 @@ function myFunction() {
 					return false;
 				}
 
-				if(CPassword.length <8){
+				if(CPassword.length <6){
 					CPasswordErr=document.getElementById('CPassword-err');
 					CPasswordErr.style.color = 'red';
-					CPasswordErr.innerHTML="Password should be atleast 8 character long";
+					CPasswordErr.innerHTML="Password should be atleast 6 character long";
 					CPassword.focus();
 					return false;
 				}
@@ -85,15 +91,29 @@ function myFunction() {
 					return false;
 				}
 				
-				if(!female.checked && !male.checked){
+				console.log(document.forms.RegForm.gender[0].checked == false);
+				console.log(document.forms.RegForm.checked == false );
+				
+				//if(female.checked == false && male.checked == false){
+					
+					//gendar=document.getElementById('gendar-err');
+					//gendar.style.color = 'red';
+					//gendar.innerHTML="You have not selected gendar";
+					//female.focus();
+					//male.focus();
+					//return false;
+					
+				//}
+				
+				if ( ( document.forms.RegForm.gender[0].checked == false ) && ( document.forms.RegForm.gender[1].checked == false ) )
+					{
 					gendar=document.getElementById('gendar-err');
 					gendar.style.color = 'red';
 					gendar.innerHTML="You have not selected gendar";
-					female.focus();
-					male.focus();
+					//alert ( "Please choose your Gender: Male or Female" );
 					return false;
-					
-				}
+					}
+
 				
 				
 
