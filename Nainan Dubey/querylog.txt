@@ -1,0 +1,7 @@
+<!---QUERY LOG--->
+<!----Frontend--->
+
+1) Difference between defer and async
+2)nth-last-of-type(n) pseudo class in css
+3)nth-of-type(n) pseudo class in css
+4)is(_____) in css nesting
