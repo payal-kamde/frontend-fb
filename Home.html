@@ -14,9 +14,9 @@
             <div class="header">
                 <li class="sitename"><a href="">Facebook</a></li>
                 <form action="post">
-                    <li>Email<br><input type="text" name="email" class="e"></li>
-                    <li>Password<br><input type="password" name="password" class="p"><br><a href="">Forgotten account?</a></li>
-                    <li><input type="submit" name="login" value="Log In" class="b"></li>
+                    <li>Email<br><input type="text" name="email" class="email1"></li>
+                    <li>Password<br><input type="password" name="password" class="password1"><br><a href="">Forgotten account?</a></li>
+                    <li><input type="submit" name="login" value="Log In" class="button"></li>
                 </form>
             </div>
         </header>
@@ -29,19 +29,23 @@
                 <p></p><i class="fa fa-share-alt-square" aria-hidden="true"></i> <B>Find more</B> of what you're looking for with Facebook Search.</p>
             </div>
            <div class="div2">
-                <form>
-                <h1>Sign Up</h1>
-                <p>It's free and always will be.</p>
-                <li><input type="text" placeholder="First Name" class="firstname"><input type="text" placeholder="Last Name" class="lastname"></li>
-                <div id="first-name-err"></div>
-                <li><input type="text" placeholder="Email address"class="email"></li>
-                <li><input type="text" placeholder="Email address"class="email"></li>
-                
-                <li><input type="password" placeholder="Password" class="pass"></li>
-                <li><input type="password" placeholder="Conform password" class="pass"></li>
-                <li><input type="radio">Female <input type="radio">Male</li>
-                <li class="terms">By clicking Sign Up,, you agree to our  <a href="">Teams. Data Police</a> and  <br><a href="">Cookies Policy </a>you may receive SMS Notification from us and <br>can opt out any time.</li>
-                <li><input type="button"  value="Sign Up" class="sub" onclick="myFunction()"></li>
+                <form name="RegForm">
+                    <h1>Sign Up</h1>
+                    <p>It's free and always will be.</p>
+                    <li><input type="text" placeholder="First Name" class="firstname"  name="firstname"><input type="text" placeholder="Last Name" class="lastname"  name="lastname"></li>
+                    <div id="first-name-err"></div>
+                    <li><input type="text" placeholder="Email address"class="email" name="EMail"></li>
+                    <div id="EMail-err"></div>
+                    <li><input type="password" placeholder="Password" class="pass" name="Password"></li>
+                    <div id="Password-err"></div>
+                    <li><input type="password" placeholder="Confirm password" class="pass" name="CPassword"></li>
+                    <div id="CPassword-err"></div>
+                    <br>
+                    <li><input type="radio" name="female" >Female <input type="radio" name="male">Male</li>
+                    <div id="gendar-err"></div>
+                    <br>
+                    <li class="terms">By clicking Sign Up,, you agree to our  <a href="">Teams. Data Police</a> and  <br><a href="">Cookies Policy </a>you may receive SMS Notification from us and <br>can opt out any time.</li>
+                    <li><input type="button"  value="Sign Up" class="sub" onclick="myFunction()"></li>
                 </form>
             </div>
             
